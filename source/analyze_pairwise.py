@@ -1,3 +1,26 @@
+# Key Points : 
+
+'''	1.	Filtering:
+	•	The DataFrame is filtered based on the provided parameters: model type (gpt-4), exam set (test), and exam name if defined. If agent_name is set, it filters by that as well.
+	•	The code further filters the data to include only records related to the “comprehensive-100” exam.
+	2.	Data Grouping and Sorting:
+	•	The data is grouped by model, set, exam, and problem ID. It aggregates the total score, the first agent name, and the maximum reflection score (reflection_1_score).
+	•	The data is divided into two subsets: correct (where score == 0) and incorrect (where score == 1).
+	•	The incorrect subset is sorted by model, set, exam, problem ID, and score.
+	3.	Reflection Score Averaging:
+	•	The average reflection score (reflection_1_score) is calculated separately for both the correct and incorrect subsets, grouped by model, set, and exam.
+	•	The resulting averages for correct and incorrect answers are stored in separate DataFrames: correct_avg and incorrect_avg.
+    '''
+
+
+
+
+
+
+
+
+
+
 # Import the packages
 import os
 import re

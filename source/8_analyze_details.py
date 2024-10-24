@@ -1,3 +1,25 @@
+# Key Points
+'''	1.	Data Loading and Preparation:
+	•	The code first loads baseline data for each model and combines it for all exams.
+	•	For each agent, the corresponding data is loaded and updated to compare with the baseline.
+	2.	Sorting and Processing:
+	•	Both baseline and agent data are sorted by exam_name and problem_id to ensure they align properly before comparison.
+	3.	Score and Accuracy Calculation:
+	•	The code calculates total scores, accuracy, and the difference in accuracy between the baseline and each agent.
+	4.	McNemar’s Test:
+	•	A contingency table is created to compare correct/incorrect classifications between the baseline and the agent.
+	•	McNemar’s test is performed to statistically determine whether the agent’s performance is significantly different from the baseline.
+	5.	Results Storage:
+	•	The results for each model-agent combination are stored in a DataFrame and saved to a CSV file.
+	6.	Pivot Table Creation:
+	•	A pivot table is generated to compare the accuracy of different agents across models, and baseline accuracy is appended as a reference.
+	•	The pivot table is saved as a CSV for easy comparison and further analysis.'''
+
+
+
+
+
+
 # Import libraries
 import os
 import numpy as np

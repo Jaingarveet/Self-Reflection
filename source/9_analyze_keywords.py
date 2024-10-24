@@ -1,3 +1,26 @@
+# Key Points : 
+
+
+'''1.	Data Loading: The code reads text files from a specified directory structure. These files contain “Error Keywords” and are processed to extract relevant keywords.
+	2.	Keyword Cleaning and Remapping: Unwanted phrases/words are removed from the keywords, and certain keywords are standardized using a dictionary (remap_list).
+	3.	Filtering: Only top-level keywords (first lines related to errors) are selected for analysis.
+	4.	Keyword Aggregation: Keywords are grouped by model_name and keyword to count their occurrences and calculate their average depth (though depth is mostly 1 here).
+	5.	Visualization: A horizontal bar chart is plotted to display the top N keywords, with different colors representing different models. The plot is stacked to show keyword occurrences for each model.
+
+Adjustments:
+
+	•	The code processes only files with the agent name “keywords” and skips files unless they are related to “comprehensive-100.”
+	•	The horizontal bar chart is built to show how many times each error keyword appeared, categorized by the model.
+'''
+
+
+
+
+
+
+
+
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
