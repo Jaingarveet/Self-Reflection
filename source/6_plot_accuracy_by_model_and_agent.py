@@ -22,9 +22,6 @@
 
 
 
-
-
-
 # Import the necessary packages
 import os  # For handling file and directory operations
 import re  # For regular expressions (not used here, but imported)

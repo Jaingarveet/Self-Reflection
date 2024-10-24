@@ -14,8 +14,6 @@
 
 
 
-
-
 import os
 from datetime import datetime
 from logs.log import Log, LogLevel  # Handles logging and defines log levels

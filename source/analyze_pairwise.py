@@ -18,9 +18,6 @@
 
 
 
-
-
-
 # Import the packages
 import os
 import re
